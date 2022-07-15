@@ -1,4 +1,4 @@
-package Board;
+package com.REST_api.REST_api.Board;
 
 import java.util.Arrays;
 

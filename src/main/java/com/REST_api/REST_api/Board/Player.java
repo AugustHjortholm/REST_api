@@ -1,4 +1,4 @@
-package Board;
+package com.REST_api.REST_api.Board;
 
 import java.awt.*;
 import java.util.Arrays;
@@ -9,11 +9,12 @@ public class Player {
     String heading;
     boolean isAI;
     String name;
-    Color color;
+    //needs to be color, but is actin like a bitch so its a string for now
+    String color;
     String[] commandCards;
     String[] registerCards;
 
-    public Player(int posX, int posY, String heading, boolean isAI, String name, Color color, String[] commandCards, String[] registerCards){
+    public Player(int posX, int posY, String heading, boolean isAI, String name, String color, String[] commandCards, String[] registerCards){
         this.posX = posX;
         this.posY = posY;
         this.heading = heading;
@@ -64,11 +65,11 @@ public class Player {
         this.name = name;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
